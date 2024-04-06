@@ -7,10 +7,14 @@ import Footer from "./components/Footer";
 export default function App() {
   return (
     <div>
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<MainMenuPage />} />
-      </Routes>
+      <header className="inline">
+        <NavBar />
+      </header>
+      <main className="w-10/12 mx-auto">
+        <Routes>
+          <Route path="/" element={<MainMenuPage />} />
+        </Routes>
+      </main>
       <Footer />
     </div>
   )
