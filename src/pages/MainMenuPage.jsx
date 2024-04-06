@@ -11,9 +11,9 @@ export default function MainMenuPage() {
   }, [])
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col items-center">
       <div className="flex flex-col p-4">
-        <div id="listmovie" className="flex flex-wrap gap-12 justify-center">
+        <div id="listmovie" className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-12">
           {
             dataMovie.map((movie, i) => <Card key={i} menu={movie} />)
           }
